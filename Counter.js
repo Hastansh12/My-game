@@ -1,0 +1,23 @@
+class Counter{
+    constructor(){
+        
+    }
+    
+display(){
+    var onion=createSprite(95,displayHeight-70,50,50);
+    onion.addImage('onionImg',onionImg)
+    var redPepper=createSprite(265,displayHeight-70,50,50);
+    redPepper.addImage('redPepperImg',redPepperImg)
+    var greenPepper=createSprite(435,displayHeight-70,50,50);
+    greenPepper.addImage('greenPepperImg',greenPepperImg)
+    var cheeseSlice=createSprite(605,displayHeight-70,50,50);
+    cheeseSlice.addImage('cheeseSliceImg',cheeseSliceImg)
+    var bread=createSprite(775,displayHeight-70,50,50);
+    bread.addImage('breadImg',breadImg)
+    var tomato=createSprite(930,displayHeight-70,50,50);
+    tomato.addImage('tomatoImg',tomatoImg)
+
+
+    
+}
+}
