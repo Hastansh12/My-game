@@ -16,7 +16,10 @@ display(){
     bread.addImage('breadImg',breadImg)
     var tomato=createSprite(930,displayHeight-70,50,50);
     tomato.addImage('tomatoImg',tomatoImg)
-
+    var board=createSprite(displayWidth/2,displayHeight-250,displayWidth,100);
+board.addImage('boardImg',boardImg);
+var dash=createSprite(displayWidth/2,displayHeight-350,displayWidth,50);
+dash.shapeColor='brown';
 
     
 }

@@ -15,7 +15,9 @@ var customer4,customer4Img;
 var sandwich,sandwichImg;
 var tomato,toamtoImg;
 var counter;
-
+var board,boardImg;
+var dash;
+var customer;
 
 
 
@@ -30,12 +32,12 @@ redPepperImg=loadImage('Images/redPepper.png');
 cheeseSliceImg=loadImage('Images/cheese slice.png');
 breadImg=loadImage('Images/bread.png');
 tomatoImg=loadImage('Images/tomato.png');
-//customer1Img=loadImage('Images/customer1.jpg');
+customer1Img=loadImage('Images/customer1.png');
 //customer2Img=loadImage('Images/customer2.jpg');
 //customer3Img=loadImage('Images/customer3.jpg');
 //customer4Img=loadImage('Images/customer4.jpg');
 //sandwichImg=loadImage('Images/sandwich.jpg');
-
+boardImg=loadImage('Images/board.jpg');
 
 }
 
@@ -45,6 +47,7 @@ function setup() {
   manager=new Manager();
   apply=new Apply();
  counter=new Counter();
+ customer=new Customer();
 }
 
 function draw() {
@@ -59,7 +62,10 @@ background(bkgImg);
   apply.display();
   } 
   if(gameState===2){
-    counter.display();
+    
+  background(bkgImg);
+  counter.display();
+  customer.display();
   }
   drawSprites();
 }
